@@ -114,7 +114,6 @@
     </header>
     <main>
         <div class="main__wrapper">
-        
             <section class="main__new">
                 <h3>New!</h3>
                 <ul class="main__new__list">
@@ -133,9 +132,9 @@
                 </div>
                 <img class="newsletter__image--1" src="./assets/images/icons/newsletter-icons.png" alt="">
                 <img class="newsletter__image--2" src="./assets/images/icons/newsletter-icons.png" alt="">
-                <form action="#">
+                <form action="/">
                     <label for="email">Your e-mailadress</label>
-                    <input type="email">
+                    <input type="email" required>
                     <button type="submit">SUBSCRIBE</button>
                 </form>
             </section>
@@ -204,11 +203,17 @@
             </div>
         </div>
     </footer>
+    <div id="consent-popup" class="hidden">
+        <p>This webshop was made as an assignment for Arteveldehogeschool</a>.
+        </p>
+        <a id="accept" href="#">That's fine!</a>
+    </div>
 
     <script src="./assets/js/profile.js"></script>
     <script src="./assets/js/shoppingCart.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/currentUserProfile.js"></script>
-    
+    <script src="./assets/js/cookie.js"></script>
+
 </body>
 </html>

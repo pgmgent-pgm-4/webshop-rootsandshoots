@@ -109,13 +109,9 @@
                     let hasKeyword = element.tags.includes(keyword)
                     if ((size === "") && (price === "") && (hasKeyword === true)) {
                         allData.push(element)
-                    } else if ((length > element.size) || (cost > element.price)) {
+                    } else if ((length > element.size) && (cost > element.price)) {
                         allData.push(element)
-                    } else if (hasKeyword === true) {
-                        allData.push(element)
-                    } else if ((length > element.size) || (cost > element.price)) {
-                        allData.push(element)
-                    }
+                    } 
                 })
             }
 
@@ -126,8 +122,10 @@
                     }
                 })
             })
+
+            const shownData = allData.slice(0,25)
             
-            allData.forEach(element => {
+            shownData.forEach(element => {
                 if (element.onSale) {
                     let discount = element.price*0.8;
                     let newprice = Math.round(discount)

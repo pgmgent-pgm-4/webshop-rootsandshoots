@@ -1,0 +1,29 @@
+.contact__container {
+    background-color: #ebf2ea;
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem;
+        input {
+            margin-top: 0.2rem;
+            margin-bottom: 1rem;
+        }
+        label {
+            margin-bottom: 0.5rem;
+        }
+        button {
+            width: 10rem;
+            height: 3rem;
+            margin: 1rem auto;
+            border: none;
+            background-color: white;
+            color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
