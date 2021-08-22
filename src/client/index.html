@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Roots & Shoots - Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="nav__wrapper">
+            <div class="logo">
+                <img src="./assets/images/logo/logo.png" alt="Roots&shoots logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="/">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/plants">Plants</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/care">Care</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav__item nav__social__first">
+                        <a class="nav__social" id="nav__cart" href="">
+                            <img src="./assets/images/icons/checkout.png" alt="checkout icon">
+                        </a>
+                        <div class="nav__cart__extended" id="nav__cartContainer">
+                            <a href="/cart">SHOPPING CART</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__social" id="nav__profile" href="">
+                            <img src="./assets/images/icons/user.png" alt="user icon">
+                        </a>
+                        <div class="nav__extended" id="nav__profileContainer">
+                            <a href="/login">SIGN IN</a>
+                            <a href="/signup">SIGN UP</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero__wrapper">
+            <div class="hero">
+                <div class="hero__searchbar">
+                    <h2 class="hero__title text--center">Find your ideal plant!</h2>
+                    <div class="hero__searchoptions">
+                        <form id="search__form" action="/plants">
+
+                            <label for="keywords"></label>
+                            <input class="keywords" type="text" name="keywords" placeholder="Search for keywords..">
+
+                            <label for="category">What type of plant?</label>
+                            <select name="category" id="category">
+                                <option></option>
+                                <option value="indoor plants">indoor plants</option>
+                                <option value="outdoor plants">outdoor plants</option>
+                                <option value="exotic plants">exotic plants</option>
+                                <option value="european">european</option>
+                                <option value="asian">asian</option>
+                                <option value="african">african</option>
+                                <option value="south american">south american</option>
+                            </select>
+
+                            <label for="type">What plant needs?</label>
+                            <select name="type" id="type">
+                                <option></option>
+                                <option value="air purifying">air purifying</option>
+                                <option value="animal friendly">animal friendly</option>
+                                <option value="easy to maintain">easy to maintain</option>
+                            </select>
+
+                            <label for="size">What plant size?</label>
+                            <select name="size" id="size">
+                                <option></option>
+                                <option value="small">small (under 50cm)</option>
+                                <option value="medium">medium (50cm - 100cm)</option>
+                                <option value="large">large (100cm +)</option>
+                            </select>
+
+                            <label for="price">What price range?</label>
+                            <select name="price" id="price">
+                                <option></option>
+                                <option value="cheap">under 20 euros</option>
+                                <option value="normal">under 50 euros</option>
+                                <option value="expensive">under 100 euros</option>
+                            </select>
+
+                        </form>
+                        <button form="search__form" type="submit">SEARCH!</button>
+                    </div>
+                </div>
+                <div class="hero__main">
+                    <div class="hero__image">
+                        <img src="./assets/images/header/PlantsMainHeader.jpg" alt="plants hero">
+                    </div>
+                    <div class="hero__commercial">
+                        <ul class="hero__commercial__list">
+                            <li><span>24/7</span> support</li>
+                            <li><span>Delivered</span> the next day!</li>
+                            <li><span>Free</span> delivery from €20,-</li>
+                            <li class="hero__commercial__navigation">All plants</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__wrapper">
+        
+            <section class="main__new">
+                <h3>New!</h3>
+                <ul class="main__new__list">
+                </ul>
+            </section>
+
+            <section class="main__onsale">
+                <h3>On sale!</h3>
+                <ul class="main__onsale__list">
+                </ul>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter__title">
+                    <h3>Interested in our newsletter?</h3>
+                </div>
+                <img class="newsletter__image--1" src="./assets/images/icons/newsletter-icons.png" alt="">
+                <img class="newsletter__image--2" src="./assets/images/icons/newsletter-icons.png" alt="">
+                <form action="#">
+                    <label for="email">Your e-mailadress</label>
+                    <input type="email">
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </section>
+            <div class="inspiration">
+                <div class="inspiration__title">
+                    <h3>Need inspiration?</h3>
+                </div>
+                <div class="inspiration__grid">
+                    <div class="grid1">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGxhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                    </div>
+                    <div class="grid2">
+                        <img src="https://blog-images.pharmeasy.in/2020/11/02135032/indoor-plants-1.jpg" alt="">
+                    </div>
+                    <div class="grid3">
+                        <img src="https://images.ctfassets.net/3s5io6mnxfqz/40rhYMP4wXsOztqvBLxPq1/1c5ab13307d548e0391b5b1452534fe2/AdobeStock_297291798.jpeg" alt="">
+                    </div>
+                    <div class="grid4">
+                        <img src="https://images.squarespace-cdn.com/content/v1/59765fd317bffcafaf5ff75c/1545073157343-KBYJVAU4RE7C1CBHLLE4/ke17ZwdGBToddI8pDm48kHUzxcQwd2DgHE3KO6VtZClZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIjemT7TLA_6Za-g0iyqDFHfh0kLGIF9yLJqKkHdIutdkKMshLAGzx4R3EDFOm1kBS/indoor-plants.jpg" alt="">
+                    </div>
+                    <div class="grid5">
+                        <img src="https://www.enjpg.com/img/2020/plant.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer">
+                <nav class="footer__navigation">
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="">order information</a></li>
+                        <li><a href="">payment information</a></li>
+                        <li><a href="">delivery</a></li>
+                        <li><a href="">return policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="">business</a></li>
+                        <li><a href="">giftcards</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="">history</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">instagram</a></li>
+                        <li><a href="">facebook</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/profile.js"></script>
+    <script src="./assets/js/shoppingCart.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/currentUserProfile.js"></script>
+    
+</body>
+</html>

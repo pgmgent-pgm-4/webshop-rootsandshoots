@@ -1,0 +1,105 @@
+.order__history__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 0 auto;
+    .past__orders {
+        display: flex;
+        flex-direction: column;
+        li {
+            list-style: none;
+            border: solid 0.2rem white;
+            margin-bottom: 0.5rem;
+            a {
+                color: white;
+                background-color: #a8bda7;
+                display: flex;
+                flex-direction: row;
+                .product__details--info {
+                    padding: 0.2rem 0.5rem;
+                    p {
+                        margin: 0;
+                    }
+                    h2 {
+                        margin: 0;
+                    }
+                }
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+                .oldprice {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.checkout__screen {
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+    margin: 0 auto;
+    .checkout {
+        width: 50%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+        button {
+            height: 3rem;
+            width: 6rem;
+            border: none;
+            background-color: white;
+            color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .checkout__innerflex {
+        width: 50%;
+        .total__price {
+            width: 100%;
+            padding: 3rem;
+        }
+    }
+    .shopping__cart {
+        width: 100%;
+        max-width: 40rem;
+        padding: 3rem;
+        h2 {
+            margin: 0;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            li {
+                list-style: none;
+                border: solid 0.2rem white;
+                margin-bottom: 0.5rem;
+                a {
+                    color: white;
+                    background-color: #a8bda7;
+                    display: flex;
+                    flex-direction: row;
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                    .oldprice {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

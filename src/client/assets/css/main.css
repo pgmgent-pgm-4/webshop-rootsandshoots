@@ -1,0 +1,1304 @@
+/** 
+* Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+* Import modules
+*/
+/**
+* Base
+*/
+body {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #EBF2EA;
+}
+
+/**
+* Helper
+*/
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+}
+
+/**
+* Extend/Inheritance
+*/
+header .hero {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+/**
+* Footer
+*/
+footer {
+  background-color: #EBF2EA;
+  padding: 3rem 0;
+}
+footer .footer__wrapper {
+  background-color: #BBD2B9;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+}
+footer .footer {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+footer .footer__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .footer__navigation div {
+  width: 20%;
+}
+footer .footer__navigation div h3 {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 1rem;
+  border-bottom: rgba(0, 0, 0, 0.205) solid 0.2rem;
+}
+footer .footer__navigation div ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer__navigation div ul li {
+  padding-bottom: 0.2rem;
+}
+footer .footer__navigation div ul li a {
+  color: #000;
+}
+footer .footer__navigation div ul li a:hover {
+  color: #fff;
+}
+
+/**
+* Header
+*/
+header {
+  background-color: #EBF2EA;
+  padding-top: 3rem;
+}
+header .nav__wrapper {
+  background-color: #BBD2B9;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+header .nav__wrapper .logo {
+  margin-left: 7.5rem;
+}
+header .nav__wrapper .logo img {
+  width: 8rem;
+}
+header .nav__wrapper .nav {
+  margin-right: 2rem;
+}
+header .nav__wrapper .nav__list {
+  display: flex;
+  list-style: none;
+}
+header .nav__wrapper .nav__item {
+  margin-right: 1rem;
+}
+header .nav__wrapper .nav__link {
+  padding: 1.7rem 1rem;
+  color: #000;
+}
+header .nav__wrapper .nav__link:hover {
+  background-color: #cadfc7;
+  border-radius: 0 0 1rem 1rem;
+  color: #000;
+}
+header .nav__wrapper .nav__link:active {
+  background-color: #cadfc7;
+  border-radius: 0 0 1rem 1rem;
+  color: #000;
+}
+header .nav__wrapper .nav__social {
+  padding: 0.75rem;
+}
+header .nav__wrapper .nav__social img {
+  width: 1.3rem;
+}
+header .nav__wrapper .nav__social__first {
+  margin-left: 2rem;
+}
+header .nav__wrapper .nav__cart__extended {
+  width: 10rem;
+  height: 3.75rem;
+  position: absolute;
+  background-color: #a8bda7;
+  border: solid #ebf2ea 0.2rem;
+  margin-top: 1rem;
+  display: none;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+header .nav__wrapper .nav__cart__extended a {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  line-height: 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background-color: #95a793;
+  color: black;
+}
+header .nav__wrapper .nav__cart__extended a:hover {
+  background-color: black;
+  color: white;
+}
+header .nav__wrapper .nav__extended {
+  width: 10rem;
+  height: 6.5rem;
+  position: absolute;
+  background-color: #a8bda7;
+  border: solid #ebf2ea 0.2rem;
+  margin-top: 1rem;
+  display: none;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+header .nav__wrapper .nav__extended a {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  line-height: 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background-color: #95a793;
+  color: black;
+}
+header .nav__wrapper .nav__extended a:hover {
+  background-color: black;
+  color: white;
+}
+header .nav__wrapper .nav__extended .logout {
+  height: 1rem;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+header .hero__wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+  height: 42rem;
+  background-color: #cadfc7;
+}
+header .hero__searchbar {
+  border-bottom: #BBD2B9 solid 0.2rem;
+  width: 25%;
+  position: relative;
+  background-color: #fff;
+}
+header .hero__searchoptions form {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header .hero__searchoptions form .keywords {
+  margin-bottom: 2rem;
+}
+header .hero__searchoptions form label, header .hero__searchoptions form select {
+  margin-top: 0.5rem;
+}
+header .hero__searchoptions form select {
+  color: black;
+}
+header .hero__searchoptions button {
+  border-style: none;
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #A8BDA7;
+  border-right: #BBD2B9 solid 0.2rem;
+  border-top: #BBD2B9 solid 0.2rem;
+}
+header .hero__searchoptions button:hover {
+  background-color: black;
+  color: white;
+}
+header .hero__main {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+header .hero__image {
+  height: 90%;
+}
+header .hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .hero__commercial {
+  height: 10%;
+}
+header .hero__commercial__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 1rem;
+  color: #1414149c;
+  height: 100%;
+  margin: 0;
+}
+header .hero__commercial__list span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+header .hero__commercial__navigation {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #A8BDA7;
+}
+header .hero__title {
+  color: #141414;
+  font-size: 2rem;
+  width: 50%;
+  margin: 2.5rem auto;
+  border-bottom: solid #141414 0.2rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: red;
+}
+
+/**
+* Home
+*/
+.main__wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #fff;
+}
+.main__wrapper .main__new__list,
+.main__wrapper .main__onsale__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.main__wrapper .main__new__list li,
+.main__wrapper .main__onsale__list li {
+  padding: 0 0.5rem;
+  list-style: none;
+  max-height: 100%;
+}
+.main__wrapper .main__new__list li img,
+.main__wrapper .main__onsale__list li img {
+  max-width: 100%;
+  height: 10rem;
+}
+.main__wrapper .main__new__list li a,
+.main__wrapper .main__onsale__list li a {
+  text-decoration: none;
+  color: black;
+}
+.main__wrapper .main__new__list li .home__item__name,
+.main__wrapper .main__onsale__list li .home__item__name {
+  text-decoration: underline;
+}
+.main__wrapper .main__new__list li .home__item__price,
+.main__wrapper .main__onsale__list li .home__item__price {
+  text-decoration: line-through;
+  text-align: right;
+  margin: 0;
+}
+.main__wrapper .main__new__list li .home__item__newprice,
+.main__wrapper .main__onsale__list li .home__item__newprice {
+  font-weight: 500;
+  text-align: right;
+  margin: 0;
+}
+.main__wrapper h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+}
+.main__wrapper section {
+  height: 17.5rem;
+  padding: 1rem;
+}
+.main__wrapper section:nth-child(even) {
+  background-color: #cadfc7;
+}
+.main__wrapper .newsletter {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #EBF2EA !important;
+}
+.main__wrapper .newsletter h3 {
+  font-size: 2rem;
+}
+.main__wrapper .newsletter__image--1 {
+  scale: 75%;
+  position: absolute;
+  left: 10rem;
+  z-index: 1;
+}
+.main__wrapper .newsletter__image--2 {
+  scale: 85%;
+  position: absolute;
+  right: 8rem;
+  transform: rotate(180deg);
+}
+.main__wrapper .newsletter__title {
+  z-index: 2;
+}
+.main__wrapper .newsletter form {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  width: 20rem;
+}
+.main__wrapper .newsletter form label {
+  font-size: 1.5rem;
+}
+.main__wrapper .newsletter form input {
+  margin: 1rem 0;
+  height: 2rem;
+}
+.main__wrapper .newsletter form button {
+  width: 50%;
+  height: 2rem;
+  border-style: none;
+  background-color: #BBD2B9;
+}
+.main__wrapper .newsletter form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.main__wrapper .inspiration {
+  background-color: #EBF2EA;
+}
+.main__wrapper .inspiration__title h3 {
+  padding: 1rem;
+  background-color: #cadfc7;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.main__wrapper .inspiration__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1);
+  grid-gap: 0.5rem;
+  grid-auto-rows: minmax(15rem, 17.5rem);
+}
+.main__wrapper .inspiration__grid div img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.main__wrapper .inspiration__grid .grid1 {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+.main__wrapper .inspiration__grid .grid2 {
+  grid-column: 2/5;
+  grid-row: 1;
+}
+.main__wrapper .inspiration__grid .grid3 {
+  grid-column: 2/5;
+  grid-row: 2;
+}
+.main__wrapper .inspiration__grid .grid4 {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.main__wrapper .inspiration__grid .grid5 {
+  grid-column: 3/5;
+  grid-row: 3;
+}
+
+.plant__list {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.plant__list li {
+  list-style: none;
+  width: 10rem;
+  height: 15rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  object-fit: cover;
+}
+.plant__list li a {
+  text-decoration: none;
+  color: black;
+}
+.plant__list li .product__details--info {
+  height: 5rem;
+}
+.plant__list li .product__details--info h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+.plant__list li .product__details--info p {
+  margin: 0;
+}
+.plant__list li .product__details--info .price,
+.plant__list li .product__details--info .oldprice {
+  text-align: right;
+}
+.plant__list li .product__details--info .newprice {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+.plant__list li img {
+  width: 100%;
+}
+
+/**
+* Sign up
+*/
+main .signup__container {
+  height: 27.5rem;
+  background-color: white;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .signup__container div {
+  width: 80%;
+}
+main .signup__container div h3 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 0.15rem lightgrey;
+}
+main .signup__container div form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+main .signup__container div form div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .signup__container div form div input {
+  width: 60%;
+  margin: 0.5rem 0 1rem;
+}
+main .signup__container div form div button {
+  width: 10rem;
+  height: 2rem;
+  background-color: #bbd2b9;
+  border: none;
+}
+main .signup__container div form div button:hover {
+  background-color: black;
+  color: white;
+}
+
+/**
+* Sign in
+*/
+main .signin__container {
+  height: 27.5rem;
+  background-color: white;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .signin__container div {
+  width: 80%;
+}
+main .signin__container div h3 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 0.15rem lightgrey;
+}
+main .signin__container div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .signin__container div form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+main .signin__container div form div input {
+  width: 60%;
+  margin: 0.5rem 0 1rem;
+}
+main .signin__container div form div button {
+  width: 10rem;
+  height: 2rem;
+  background-color: #bbd2b9;
+  border: none;
+}
+main .signin__container div form div button:hover {
+  background-color: black;
+  color: white;
+}
+
+/**
+* Profile
+*/
+main .profile__container {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .profile__container a {
+  padding: 0.5rem;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+}
+main .profile__container a:hover {
+  background-color: black;
+  color: white;
+}
+main .profile__container .backtohome--button {
+  max-width: 55rem;
+}
+main .profile__container__data h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  width: 100%;
+}
+main .profile__container__data a {
+  background-color: white;
+  color: black;
+}
+main .profile__container__data--flex {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  width: 50rem;
+  justify-content: space-between;
+  background-color: #bbd2b9;
+}
+main .profile__container__data--flex div {
+  padding: 1rem;
+}
+main .profile__container__data--flex div p {
+  margin: 0.75rem 0 0.2rem 0;
+}
+main .profile__container__data--flex div .values {
+  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+}
+main .profile__container__data--flex div:nth-child(2) {
+  border-left: solid 0.2rem white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .profile__container__data--flex div:nth-child(2) .datetime {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+main .profile__editor {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .profile__editor .delete__button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: white;
+  color: black;
+  margin: 2rem auto;
+}
+main .profile__editor .delete__button:hover {
+  background-color: black;
+  color: white;
+}
+main .profile__editor form {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main .profile__editor form input {
+  margin: 0.5rem 0 1rem 0;
+}
+main .profile__editor form button {
+  width: 8rem;
+  height: 3rem;
+  background-color: white;
+  border: solid 0.1rem #bbd2b9;
+}
+main .profile__editor form button:hover {
+  background-color: black;
+  color: white;
+}
+
+.product__details {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.product__details img {
+  border: 1rem solid #bbd2b9;
+  margin: 0 2rem;
+}
+.product__details--info {
+  padding: 1rem;
+}
+.product__details--info .category__title {
+  text-align: center;
+}
+.product__details--info .details__category__name {
+  margin: 0;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  display: inline-block;
+}
+.product__details--info .details__category__name:hover {
+  background-color: black;
+  color: white;
+}
+.product__details--info h2 {
+  margin: 3rem 0;
+}
+.product__details--info .price {
+  text-decoration: line-through;
+}
+.product__details--info .newprice {
+  background-color: rgba(255, 0, 0, 0.274);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.product__details--info .description {
+  border-left: 0.2rem rgba(0, 0, 0, 0.445) solid;
+  padding-left: 0.5rem;
+}
+.product__details--info .size {
+  text-align: right;
+}
+.product__details--info .tags__title {
+  margin-top: 3rem;
+}
+.product__details--info .details__tag {
+  margin: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.product__details--info .details__tag:hover {
+  background-color: black;
+  color: white;
+}
+
+.product__form {
+  padding: 3rem;
+}
+.product__form .product__details__login {
+  margin: 0 auto;
+  max-width: 15rem;
+}
+.product__form .product__details__login a {
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+}
+.product__form .product__details__login a:hover {
+  background-color: black;
+  color: white;
+}
+
+.product__reviews__title {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 1rem;
+  color: white;
+  background-color: #a8bda7;
+}
+
+.product__reviews {
+  background-color: #ebf2ea;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 50rem;
+}
+.product__reviews .review__item {
+  list-style: none;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.product__reviews .review__item h3 {
+  padding: 1rem;
+  background-color: #bbd2b9;
+  color: white;
+  margin-top: 0;
+}
+.product__reviews .review__item p {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+.product__reviews .review__item .review__score__title,
+.product__reviews .review__item .review__text__title {
+  background-color: #a8bda7;
+  display: inline-block;
+}
+.product__reviews .review__item .review__text__title {
+  margin-top: 1rem;
+}
+.product__reviews .review__item .review__text,
+.product__reviews .review__item .review__score {
+  padding-top: 1rem;
+}
+.product__reviews .review__item .review__created {
+  text-align: right;
+  color: red;
+}
+.product__reviews .no__reviews__yet {
+  list-style: none;
+}
+
+.addtocart {
+  max-width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addtocart__button {
+  border: none;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  height: 3rem;
+  width: 7rem;
+  cursor: pointer;
+}
+.addtocart__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.order__history__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.order__history__container .past__orders {
+  display: flex;
+  flex-direction: column;
+}
+.order__history__container .past__orders li {
+  list-style: none;
+  border: solid 0.2rem white;
+  margin-bottom: 0.5rem;
+}
+.order__history__container .past__orders li a {
+  color: white;
+  background-color: #a8bda7;
+  display: flex;
+  flex-direction: row;
+}
+.order__history__container .past__orders li a .product__details--info {
+  padding: 0.2rem 0.5rem;
+}
+.order__history__container .past__orders li a .product__details--info p {
+  margin: 0;
+}
+.order__history__container .past__orders li a .product__details--info h2 {
+  margin: 0;
+}
+.order__history__container .past__orders li a img {
+  width: 5rem;
+  height: 5rem;
+}
+.order__history__container .past__orders li a .oldprice {
+  margin: 0;
+  padding: 0;
+}
+
+.checkout__screen {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.checkout__screen .checkout {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.checkout__screen .checkout input {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.checkout__screen .checkout button {
+  height: 3rem;
+  width: 6rem;
+  border: none;
+  background-color: white;
+  color: black;
+}
+.checkout__screen .checkout button:hover {
+  background-color: black;
+  color: white;
+}
+.checkout__screen .checkout__innerflex {
+  width: 50%;
+}
+.checkout__screen .checkout__innerflex .total__price {
+  width: 100%;
+  padding: 3rem;
+}
+.checkout__screen .shopping__cart {
+  width: 100%;
+  max-width: 40rem;
+  padding: 3rem;
+}
+.checkout__screen .shopping__cart h2 {
+  margin: 0;
+}
+.checkout__screen .shopping__cart__list {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__screen .shopping__cart__list li {
+  list-style: none;
+  border: solid 0.2rem white;
+  margin-bottom: 0.5rem;
+}
+.checkout__screen .shopping__cart__list li a {
+  color: white;
+  background-color: #a8bda7;
+  display: flex;
+  flex-direction: row;
+}
+.checkout__screen .shopping__cart__list li a img {
+  width: 5rem;
+  height: 5rem;
+}
+.checkout__screen .shopping__cart__list li a .oldprice {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+.plant__list {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    li {
+        list-style: none;
+        width: 10rem;
+        height: 15rem;
+        padding: 1rem;
+        margin-bottom: 5rem;
+        object-fit: cover;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .product__details--info {
+            height: 5rem;
+            h2 {
+                margin: 0;
+                margin-bottom: 0.5rem;
+                text-decoration: underline;
+                font-size: 1.2rem;
+            }
+            p {
+                margin: 0;
+            }
+            .price,
+            .oldprice {
+                text-align: right;
+            }
+            .newprice {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

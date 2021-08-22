@@ -1,0 +1,53 @@
+/**
+* Sign in
+*/
+
+@use "../abstracts/variables" as vars;
+@use "sass:map";
+
+main {
+
+    .signin__container {
+        height: 27.5rem;
+        background-color: white;
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        div  {
+            width: 80%;
+            h3 {
+                text-align: center;
+                padding: 1rem;
+                margin-bottom: 3rem;
+                border-bottom: solid 0.15rem lightgrey;
+            }
+            form {
+                display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width:100%;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width:50%;
+                    input {
+                        width: 60%;
+                        margin: 0.5rem 0 1rem;
+                    }
+                    button {
+                        width: 10rem;
+                        height: 2rem;
+                        background-color: #bbd2b9;
+                        border: none;
+                        &:hover {
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

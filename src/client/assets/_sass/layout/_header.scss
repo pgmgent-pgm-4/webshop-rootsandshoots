@@ -1,0 +1,219 @@
+@use "sass:map";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/extends";
+
+/**
+* Header
+*/
+
+header {
+    background-color: map.get($map: vars.$colors, $key: color3);
+    padding-top: 3rem;
+    .nav__wrapper {
+        background-color: map.get($map: vars.$colors, $key: color2);
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        .logo {
+            margin-left: 7.5rem;
+            img {
+                width: 8rem;
+            }
+        }
+        .nav {
+            margin-right: 2rem;
+            &__list {
+                display: flex;
+                list-style: none;
+            }
+            &__item {
+                margin-right: 1rem;
+            }
+            &__link {
+                padding: 1.7rem 1rem;
+                color: map.get($map: vars.$secondary-colors, $key: black);
+                &:hover {
+                    background-color: map.get($map: vars.$colors, $key: color1);
+                    border-radius: 0 0 1rem 1rem;
+                    color: map.get($map: vars.$secondary-colors, $key: black);
+                }
+                &:active {
+                    background-color: map.get($map: vars.$colors, $key: color1);
+                    border-radius: 0 0 1rem 1rem;
+                    color: map.get($map: vars.$secondary-colors, $key: black);
+                }
+            }
+            &__social {
+                padding: 0.75rem;
+                img {
+                    width: 1.3rem;
+                }
+            }
+            &__social__first {
+                margin-left: 2rem;
+            }
+            &__cart__extended {
+                width: 10rem;
+                height: 3.75rem;
+                position: absolute;
+                background-color: #a8bda7;
+                border: solid #ebf2ea 0.2rem;
+                margin-top: 1rem;
+                display: none;
+                padding: 0.5rem;
+                padding-top: 1rem;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 2.25rem;
+                    line-height: 2rem;
+                    margin: 0.5rem 0;
+                    text-align: center;
+                    background-color: #95a793;
+                    color: black;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+            &__extended {
+                width: 10rem;
+                height: 6.5rem;
+                position: absolute;
+                background-color: #a8bda7;
+                border: solid #ebf2ea 0.2rem;
+                margin-top: 1rem;
+                display: none;
+                padding: 0.5rem;
+                padding-top: 1rem;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 2.25rem;
+                    line-height: 2rem;
+                    margin: 0.5rem 0;
+                    text-align: center;
+                    background-color: #95a793;
+                    color: black;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+
+                .logout {
+                    height: 1rem;
+                    width: 100%;
+                    font-size: 0.8rem;
+                    line-height: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .hero__wrapper {
+        max-width: 90rem;
+        margin: 0 auto;
+        height: 42rem;
+        background-color: map.get($map: vars.$colors, $key: color1);
+    };
+
+    .hero {
+        @extend %flex-row;
+        &__searchbar {
+            border-bottom: map.get($map: vars.$colors, $key: color2) solid 0.2rem;
+            width: vars.$quarter;
+            position: relative;
+            background-color: map.get($map: vars.$secondary-colors, $key: white);
+        }
+        &__searchoptions {
+            form {
+                .keywords {
+                    margin-bottom: 2rem;
+                }
+                max-width: 70%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                label, select {
+                    margin-top: 0.5rem;
+                }
+                select {
+                    color: black;
+                }
+            }
+            button {
+                border-style: none;
+                width: 100%;
+                height: 4rem;
+                position: absolute;
+                bottom: 0;
+                background-color: map.get($map: vars.$colors, $key: color4);
+                border-right: map.get($map: vars.$colors, $key: color2) solid 0.2rem;
+                border-top: map.get($map: vars.$colors, $key: color2) solid 0.2rem;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+        &__main {
+            width: vars.$threequarter;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__image {
+            height: 90%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__commercial {
+            height: 10%;
+            &__list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                font-size: 1rem;
+                color: #1414149c;
+                height: 100%;
+                margin: 0;
+                span {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                }
+            }
+            &__navigation {
+                height: 100%;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: map.get($map: vars.$secondary-colors, $key: white);
+                background-color: map.get($map: vars.$colors, $key: color4);
+            }
+        }
+
+        &__title {
+            color: #141414;
+            font-size: 2rem;
+            width: 50%;
+            margin: 2.5rem auto;
+            border-bottom: solid #141414 0.2rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

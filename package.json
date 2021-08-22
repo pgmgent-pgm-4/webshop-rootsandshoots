@@ -1,0 +1,33 @@
+{
+  "name": "rootsandshoots",
+  "version": "1.0.0",
+  "description": "WebshopAtWork2",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js --watch src",
+    "seed": "nodemon src/seeders/index.js --watch src",
+    "sass": "sass --watch src/client/assets/_sass/main.scss:src/client/assets/css/main.css"
+  },
+  "author": "Dylan Garcia Calero",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "faker": "^5.4.0",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sqlite3": "^5.0.2",
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.5"
+  }
+}

@@ -1,0 +1,73 @@
+/**
+* Profile
+*/
+
+@use "../abstracts/variables" as vars;
+@use "sass:map";
+
+main {
+    .profile__container {
+        max-width: 60rem;
+        margin: 0 auto;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            padding: 0.5rem;
+            margin: 0 auto;
+            background-color: white;
+            color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+        .backtohome--button {
+            max-width: 55rem;
+        }
+
+        &__data {   
+            h2 {
+                margin: 0;
+                margin-bottom: 2rem;
+                padding-top: 3rem;
+                width: 100%;
+            }
+            a {
+                background-color: white;
+                color: black;
+            }
+            &--flex {
+                display: flex;
+                flex-direction: row;
+                margin: 3rem auto;
+                width: 50rem;
+                justify-content: space-between;
+                background-color: #bbd2b9;
+                div {
+                    p {
+                        margin: 0.75rem 0 0.2rem 0;
+                    }
+                    .values {
+                        margin: 0;
+                        color: white;
+                        font-size: 0.9rem;
+                    }
+                    padding: 1rem;
+                    &:nth-child(2) {
+                        border-left: solid 0.2rem white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .datetime {
+                            margin: 0;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
